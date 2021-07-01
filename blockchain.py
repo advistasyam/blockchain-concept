@@ -130,7 +130,7 @@ def new_transactions():
         recipient=values["recipient"],
         amount=values["amount"]
     )
-
+    
     response = {'message': f"Transaksi akan dimasukkan ke blok ke {index}"}
 
     return (jsonify(response), 201)
